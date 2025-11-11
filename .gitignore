@@ -1,0 +1,46 @@
+# Personal Content - Not Shared
+# Only structure, templates, and constants are shared
+
+# Exclude all content from main folders (keep structure)
+_constants/team.md
+/01 - Tasks/**
+/02 - Projects/**
+/02 - Projects/OneShop/
+/03 - Daily Notes/**
+/04 - Meetings/**
+/05 - Contacts/**
+/06 - Documentation/**
+/07 - Integrations & Automation/**
+/09 - Trainings/**
+/10 - Interviews/1_Candidates/**
+/10 - Interviews/2_Templates/**
+/10 - Interviews/3_Skills/**
+/10 - Interviews/4_Exercises/**
+/10 - Interviews/5_Resources/**
+/11 - Slides/**
+
+# Exclude personal attachments
+**/_attachments/*
+
+# Keep example files (will be created)
+!**/example-*
+!**/README.md
+
+# Obsidian workspace files (keep some, exclude others)
+.obsidian/workspace*
+.obsidian/graph.json
+.obsidian/core-plugins-migration.json
+.obsidian/plugins/
+.obsidian/themes/
+.obsidian/hotkeys.json
+
+# Keep useful Obsidian configuration
+!.obsidian/community-plugins.json
+!.obsidian/core-plugins.json
+!.obsidian/templates.json
+
+# macOS
+.DS_Store
+
+# Personal copilot configurations
+/copilot/
