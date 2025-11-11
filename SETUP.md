@@ -123,6 +123,53 @@ Set up automation for:
 - **Automated tagging** based on content
 - **Status updates** via external tools
 
+### Automatic community plugin installer (optional)
+
+This repository includes a helper script to automatically download and install community plugins listed in `.obsidian/community-plugins.json`.
+
+Notes and limitations:
+- The script fetches the official Obsidian community index to resolve plugin IDs to GitHub repositories, then downloads the latest release (or falls back to the master branch zip) and installs the plugin into `.obsidian/plugins/<plugin-id>`.
+- Some plugins require a build step and are not distributed as a ready-to-use release. If `manifest.json` is missing after installation, check the plugin repo for build instructions or a prebuilt release artifact.
+- GitHub API rate limits may apply when installing many plugins. If you hit rate limits, retry later or adapt the script to use authenticated requests.
+- This is a convenience helper (not an official Obsidian feature). Use at your own risk and review what will be installed.
+
+How to use (from the repository root):
+
+```bash
+# make script executable once
+chmod +x scripts/install-obsidian-plugins.sh
+
+# run script (it requires curl, jq and unzip)
+./scripts/install-obsidian-plugins.sh
+```
+
+After the script finishes, open Obsidian and go to Settings → Community plugins to enable the newly-installed plugins (disable Safe Mode to enable community plugins).
+
+## Native (recommended) approach — use Obsidian's community-plugins list
+
+Obsidian keeps a list of recommended/installed community plugin IDs in `.obsidian/community-plugins.json`. This repository includes that file so users can easily see which community plugins the template expects.
+
+Recommended (native) workflow:
+
+1. Open the vault in Obsidian
+2. Go to Settings → Community plugins
+3. If Safe Mode is enabled, turn it off (Obsidian will warn you)
+4. Open the "Browse" tab and search for the plugin IDs listed in `.obsidian/community-plugins.json`
+5. Install each plugin from the Community plugin browser and enable it
+
+Why this is recommended:
+
+- The Community plugin browser installs official builds and shows release notes/permissions
+- You can review and enable plugins one-by-one (Obsidian requires explicit consent for community plugins for security)
+- Some plugins are released as prebuilt packages—installing from the official UI ensures you get those builds
+
+Limitations of the native approach:
+
+- It requires a small amount of manual interaction (one-click install per plugin)
+- It doesn't automate build steps for plugins that require compiling—those must be installed from prebuilt releases or built locally
+
+If you prefer automation, the included script `scripts/install-obsidian-plugins.sh` is an alternative (see above). The script can speed up installation but has caveats (rate limits, missing manifest.json for build-required plugins). Use it only if you accept those trade-offs.
+
 ### 2. Integration
 Connect with external tools:
 - **Jira/GitHub** for task synchronization

@@ -1,6 +1,5 @@
 ---
 tags: [task, example]
-created: 2025-01-15
 ---
 # ✅ Task: Example Feature Implementation
 
@@ -9,7 +8,6 @@ created: 2025-01-15
 - [ ] Add unit tests 🔽 ➕ 2025-01-17
 - **Context**:: [[Example Project]], [[Tech Lead Contact]]
 - **Status**:: In Progress
-- **Priority**:: High
 - **Due**:: 2025-01-20
 
 ## 🔍 Details

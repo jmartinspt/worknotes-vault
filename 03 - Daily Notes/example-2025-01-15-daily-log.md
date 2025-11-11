@@ -20,7 +20,7 @@ due '2025-01-15'
 
 ---
 
-## �️ Conversations
+## 🗣️ Conversations
 - **09:00** – [[Sarah Johnson - Tech Lead]]: Sprint planning session. Discussed authentication feature timeline and identified Microsoft OAuth dependency.
 - **15:00** – [[Mike Chen - Product Manager]]: 1:1 meeting about career development goals and mobile app project progress.
 - **16:30** – [[Alex Rodriguez - Developer]]: Code review discussion on payment processing fix and testing approach.
@@ -38,7 +38,7 @@ sort Date desc, Time desc
 
 ---
 
-## � Trainings
+## 📅 Trainings
 ```dataview
 table Start, End
 from "09 - Trainings"

@@ -10,7 +10,7 @@ tags: [meeting, example]
 - **Participants**: [[Sarah Johnson - Scrum Master]], [[Mike Chen - Product Owner]], [[Alex Rodriguez - Tech Lead]], [[Jessica Kim - Developer]], [[David Brown - Developer]], [[Emma Wilson - QA Engineer]]
 - **Project**:: [[Example Mobile App Redesign]]
 
-## �️ Agenda
+## 📅 Agenda
 - Sprint Review & Retrospective (15 min)
 - Product Backlog Review (30 min)
 - Sprint Goal Definition (15 min)
