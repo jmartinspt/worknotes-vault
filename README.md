@@ -1,4 +1,4 @@
-# OneShop Obsidian Vault Template
+# Work Notes Obsidian Vault Template
 
 A comprehensive Obsidian vault structure designed for project management, task tracking, and knowledge organization. This template provides a structured approach to organizing work, meetings, contacts, and documentation.
 
